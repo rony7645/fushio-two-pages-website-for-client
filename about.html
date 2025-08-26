@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fushiao</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preload" as="image" href="assets/img/new.jpg">
+
+</head>
+
+<body class="about-body">
+
+    <header class="d-md-none">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html" class="site-logo"><img src="assets/img/logo.png" alt=""></a>
+                <div class="action-wrapper">
+                    <div class="btn"><a href="about.html#contact-us">Contact Us</a></div>
+                    <div class="social-icon">
+                        <a href="https://bsky.app/profile/BASEstudio.bsky.social"> <svg id="Layer_2" data-name="Layer 2"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 37.31 32.69">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <image width="85" height="85" transform="scale(.38)"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABUCAYAAACSsVm9AAAACXBIWXMAABzCAAAcwgH6y7B5AAAFhElEQVR4nO2di3EaMRCGtTRgXIFJBSYVQAdJKrBdQdyBSQd2BXYqCK4gdgUxFQQ6gAqUWc8vIuAOSzo9VsA3w4ydeHSPX6tdrVZIMVrrodZ6qd140VpfqxPm3fW11hOt9dzj/fU33p7WeuAhgM38mMWwXn7Iu3vZbuwpoJGNBtmSir2NAmitbwNfvs3/DtyxIZv7HTM7vJc/QKeLwZvdcEzeDtUquOdG6P3b9E3jsVkemq+IMGS3Meb2ewnu+Uwp9chOK0HbWYHz5WHjKtF1k4lguOMelLD9pGBY5SjmMvW1UorAXDXGxcLJKYDKIAIz4geqRQhLgLNc18whgkKPEi9ECQFURhGUdCFKCaAyi6CkClFQgLkqIIKCEPcFrttISQsoKYJC1FQ8fIVFPhUSYE0pERSEKDahgwDZwtB9EE+nC9/DDRFltwpYYqqZsCvnRLSUIALzmYjeHP4uCpzxVUp9z3W9NoiIlBBLYFZKqSERzVNfCMnFx9TXccGIUNIn2LBjnKYOXREJSYnMFuYHKSKo1KErBJ6WjoQs1lYvSQSFiCnVWgQLcJGo7U5IE4G5j706h1B4FLPNCGxYwiLllQKI6h+wenWX+yEc2BAheUQSwEUM/2D5AdFIHI4M7B++dmyjeEpiD+t5Uc/+RSC8wD4IuS2uDVJKfRH8bEvzQ8/+RSBn6M1eQDjphQbViMCM0Kt9kDwMvWOnaaQPR4aJ67AEwaSFo3uR7JhtnIalSoYhZmb/0iOil/a/FcXIYTYtfhgCGy6gFkswtBYdI5ytZRjamJsZEWbNfyuOs6ZJHIQRs27tQKMI0iMkm6uG3NKt1ORcC40i1OIXDOteD2csMTe0j0YRJOaP9jGyUhrVVX9vB0Pvy2voTX+L3VUYC5SW13bfMyLaGE7fLQFru7U4Z8NFhcOoaprv9Pb9ZwXU5IwNO6n1bRFW2W/puPjZVFGyFoGLkCqLtWukMYjYmDET0aRC31ALP9rqqmj7HwpXKR8qOxGRzU7uCHlu3/z9iXZWZpemswgQgp30zenFduZdAPjbVlqzqBDi2yliCmaG+toPF832prKJiGNaHsteiz9SXTywD3AtcP5wPYEbIqIxhidphWLSeEWZv5dP3YmOPgKJs2vh5SQ5WWEWPAkt7fcWwYCFlDE+Q3yOIaxdIOvMYfxLjOXhYBHawDyjj48Rqfi+sABe0cONY52n2sSSQoRDG64WEOMp1ZauKCJgaLrFy68xs+nKK8SImnHuLAKKrSZHlubgOcBtrHKhLo55iPR3jeN9LB4QFXUqlAgSAeN+LYVWqZm5pCb24V38hSq4XycB1nT+0hQvS8AQ9Cf0YgdOsEX4WoL4rUcFuQwtv3G2BEk74YXzyXdS52MJ1X/FZia892E7iYDiMImTMIlrHd6bHV0tIWjzXgYkWqf3vKlmEZ4rLVjbwVUEiQXDU4SDzwLupRO17dQxrKxwWZo1ePspVxGk7fA0VmDWwSU5aO+knpMIeGBJlXnb5ZqSrMFbhBonazvVbML2V5z7pi6cfQIWMiRUW+wULWOGKsFB/wzJHfkm8Epbw4KIGsNlfK/R7/y3tIb90iB5Ag/WULIQrHVyhlWuovcWuqYQUnfUx7wh93pCqxUYCloDD0PB393nPU+A2uMCYeGHVW2whty+YVasih1HXuXCOezrcIJiCG/FjyHIJMTS99u/cCJgasoLYMggRNBYq7WeJrwnOQIYPE+x9SF4JmzOSDsKAQwQIuZDd05FJOgc8lPn6H33kh4WQrieldxGfUdZcrze4cGjr5ahc4SeHjsN/VpQEcBp+5zYnfQEW8/7mZoDSlMTvTS+5eGHWAAfY9/C5dZmC14fyHmSCN8Lf7iHG+H5+jwRNfeTZzVRKfUPDTBl7K29W90AAAAASUVORK5CYII=" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/base-stud-io"><svg id="Layer_2" data-name="Layer 2"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.3 33.02">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <g>
+                                        <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                        <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53" rx="1.91"
+                                            ry="1.91" />
+                                        <path class="cls-1"
+                                            d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/basestud.io"> <svg id="Layer_2" data-name="Layer 2"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.08 35.08">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <g>
+                                        <path class="cls-1"
+                                            d="m26.61,0H8.47C3.79,0,0,3.79,0,8.47v18.14c0,4.68,3.79,8.47,8.47,8.47h18.14c4.68,0,8.47-3.79,8.47-8.47V8.47c0-4.68-3.79-8.47-8.47-8.47Zm5.44,26.01c0,3.34-2.71,6.05-6.05,6.05H9.07c-3.34,0-6.05-2.71-6.05-6.05V9.07c0-3.34,2.71-6.05,6.05-6.05h16.93c3.34,0,6.05,2.71,6.05,6.05v16.93Z" />
+                                        <path class="cls-1"
+                                            d="m17.56,8.47c-5.01,0-9.07,4.06-9.07,9.07s4.06,9.07,9.07,9.07,9.07-4.06,9.07-9.07-4.06-9.07-9.07-9.07Zm0,15.12c-3.33,0-6.05-2.72-6.05-6.05s2.72-6.05,6.05-6.05,6.05,2.72,6.05,6.05-2.72,6.05-6.05,6.05Z" />
+                                        <circle class="cls-1" cx="27.23" cy="7.86" r="1.81" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Mobile Header  -->
+    <!-- Layout for mobile version  -->
+    <div class="mobile-header d-md-block ">
+        <div class="container">
+            <div class="mobile-header-wrapper">
+                <div class="mobile-logo"><img src="/assets/img/logo.png" alt=""></div>
+                <div class="menu-toggle" id="openOffcanvas" aria-controls="offcanvas" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Off Canvas  -->
+    <div class="off-canvas" id="offcanvas" aria-hidden="true" role="dialog">
+        <div id="closeOffcanvas" class="close-btn" aria-label="Close">✕</div>
+        <div class="off-canvas-menu">
+            <a href="/">Home</a>
+            <a href="about.html">About</a>
+            <a href="about.html#team"">Our Team</a>
+        </div>
+        <div class=" off-canvas-social">
+                <div class="social-icon">
+                    <a href="https://bsky.app/profile/BASEstudio.bsky.social"> <svg id="Layer_2" data-name="Layer 2"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 37.31 32.69">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <image width="97" height="85" transform="scale(.38)"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABUCAYAAACSsVm9AAAACXBIWXMAABzCAAAcwgH6y7B5AAAFhElEQVR4nO2di3EaMRCGtTRgXIFJBSYVQAdJKrBdQdyBSQd2BXYqCK4gdgUxFQQ6gAqUWc8vIuAOSzo9VsA3w4ydeHSPX6tdrVZIMVrrodZ6qd140VpfqxPm3fW11hOt9dzj/fU33p7WeuAhgM38mMWwXn7Iu3vZbuwpoJGNBtmSir2NAmitbwNfvs3/DtyxIZv7HTM7vJc/QKeLwZvdcEzeDtUquOdG6P3b9E3jsVkemq+IMGS3Meb2ewnu+Uwp9chOK0HbWYHz5WHjKtF1k4lguOMelLD9pGBY5SjmMvW1UorAXDXGxcLJKYDKIAIz4geqRQhLgLNc18whgkKPEi9ECQFURhGUdCFKCaAyi6CkClFQgLkqIIKCEPcFrttISQsoKYJC1FQ8fIVFPhUSYE0pERSEKDahgwDZwtB9EE+nC9/DDRFltwpYYqqZsCvnRLSUIALzmYjeHP4uCpzxVUp9z3W9NoiIlBBLYFZKqSERzVNfCMnFx9TXccGIUNIn2LBjnKYOXREJSYnMFuYHKSKo1KErBJ6WjoQs1lYvSQSFiCnVWgQLcJGo7U5IE4G5j706h1B4FLPNCGxYwiLllQKI6h+wenWX+yEc2BAheUQSwEUM/2D5AdFIHI4M7B++dmyjeEpiD+t5Uc/+RSC8wD4IuS2uDVJKfRH8bEvzQ8/+RSBn6M1eQDjphQbViMCM0Kt9kDwMvWOnaaQPR4aJ67AEwaSFo3uR7JhtnIalSoYhZmb/0iOil/a/FcXIYTYtfhgCGy6gFkswtBYdI5ytZRjamJsZEWbNfyuOs6ZJHIQRs27tQKMI0iMkm6uG3NKt1ORcC40i1OIXDOteD2csMTe0j0YRJOaP9jGyUhrVVX9vB0Pvy2voTX+L3VUYC5SW13bfMyLaGE7fLQFru7U4Z8NFhcOoaprv9Pb9ZwXU5IwNO6n1bRFW2W/puPjZVFGyFoGLkCqLtWukMYjYmDET0aRC31ALP9rqqmj7HwpXKR8qOxGRzU7uCHlu3/z9iXZWZpemswgQgp30zenFduZdAPjbVlqzqBDi2yliCmaG+toPF832prKJiGNaHsteiz9SXTywD3AtcP5wPYEbIqIxhidphWLSeEWZv5dP3YmOPgKJs2vh5SQ5WWEWPAkt7fcWwYCFlDE+Q3yOIaxdIOvMYfxLjOXhYBHawDyjj48Rqfi+sABe0cONY52n2sSSQoRDG64WEOMp1ZauKCJgaLrFy68xs+nKK8SImnHuLAKKrSZHlubgOcBtrHKhLo55iPR3jeN9LB4QFXUqlAgSAeN+LYVWqZm5pCb24V38hSq4XycB1nT+0hQvS8AQ9Cf0YgdOsEX4WoL4rUcFuQwtv3G2BEk74YXzyXdS52MJ1X/FZia892E7iYDiMImTMIlrHd6bHV0tIWjzXgYkWqf3vKlmEZ4rLVjbwVUEiQXDU4SDzwLupRO17dQxrKxwWZo1ePspVxGk7fA0VmDWwSU5aO+knpMIeGBJlXnb5ZqSrMFbhBonazvVbML2V5z7pi6cfQIWMiRUW+wULWOGKsFB/wzJHfkm8Epbw4KIGsNlfK/R7/y3tIb90iB5Ag/WULIQrHVyhlWuovcWuqYQUnfUx7wh93pCqxUYCloDD0PB393nPU+A2uMCYeGHVW2whty+YVasih1HXuXCOezrcIJiCG/FjyHIJMTS99u/cCJgasoLYMggRNBYq7WeJrwnOQIYPE+x9SF4JmzOSDsKAQwQIuZDd05FJOgc8lPn6H33kh4WQrieldxGfUdZcrze4cGjr5ahc4SeHjsN/VpQEcBp+5zYnfQEW8/7mZoDSlMTvTS+5eGHWAAfY9/C5dZmC14fyHmSCN8Lf7iHG+H5+jwRNfeTZzVRKfUPDTBl7K29W90AAAAASUVORK5CYII=" />
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/base-stud-io"><svg id="Layer_2" data-name="Layer 2"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.3 33.02">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g>
+                                    <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                    <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53" rx="1.91"
+                                        ry="1.91" />
+                                    <path class="cls-1"
+                                        d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/basestud.io"> <svg id="Layer_2" data-name="Layer 2"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.08 35.08">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g>
+                                    <path class="cls-1"
+                                        d="m26.61,0H8.47C3.79,0,0,3.79,0,8.47v18.14c0,4.68,3.79,8.47,8.47,8.47h18.14c4.68,0,8.47-3.79,8.47-8.47V8.47c0-4.68-3.79-8.47-8.47-8.47Zm5.44,26.01c0,3.34-2.71,6.05-6.05,6.05H9.07c-3.34,0-6.05-2.71-6.05-6.05V9.07c0-3.34,2.71-6.05,6.05-6.05h16.93c3.34,0,6.05,2.71,6.05,6.05v16.93Z" />
+                                    <path class="cls-1"
+                                        d="m17.56,8.47c-5.01,0-9.07,4.06-9.07,9.07s4.06,9.07,9.07,9.07,9.07-4.06,9.07-9.07-4.06-9.07-9.07-9.07Zm0,15.12c-3.33,0-6.05-2.72-6.05-6.05s2.72-6.05,6.05-6.05,6.05,2.72,6.05,6.05-2.72,6.05-6.05,6.05Z" />
+                                    <circle class="cls-1" cx="27.23" cy="7.86" r="1.81" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+        </div>
+    </div>
+
+    <!-- About us  -->
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about-card">
+                <h2 class="card-heading">About Us</h2>
+                <p class="card-text">BASEstud.io builds smart streetlights that generate revenue and ease peak energy
+                    demand. Solar, EV charging, WiFi—built in. Tougher, more efficient and ready for the future.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Team  -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="heading my-6">Our Team</h2>
+            <div class="team-card ceo-card">
+                <div class="team-member-wrapper">
+                    <div class="team-avatar"><img src="assets/img/team/Heidi2.png" alt="">
+                        <div class="social-links">
+                            <a href="https://bsky.app/profile/heidi-adams.bsky.social">
+                                <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 37.31 32.69">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <image width="100" height="100" transform="scale(.38)"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABUCAYAAACSsVm9AAAACXBIWXMAABzCAAAcwgH6y7B5AAAFhElEQVR4nO2di3EaMRCGtTRgXIFJBSYVQAdJKrBdQdyBSQd2BXYqCK4gdgUxFQQ6gAqUWc8vIuAOSzo9VsA3w4ydeHSPX6tdrVZIMVrrodZ6qd140VpfqxPm3fW11hOt9dzj/fU33p7WeuAhgM38mMWwXn7Iu3vZbuwpoJGNBtmSir2NAmitbwNfvs3/DtyxIZv7HTM7vJc/QKeLwZvdcEzeDtUquOdG6P3b9E3jsVkemq+IMGS3Meb2ewnu+Uwp9chOK0HbWYHz5WHjKtF1k4lguOMelLD9pGBY5SjmMvW1UorAXDXGxcLJKYDKIAIz4geqRQhLgLNc18whgkKPEi9ECQFURhGUdCFKCaAyi6CkClFQgLkqIIKCEPcFrttISQsoKYJC1FQ8fIVFPhUSYE0pERSEKDahgwDZwtB9EE+nC9/DDRFltwpYYqqZsCvnRLSUIALzmYjeHP4uCpzxVUp9z3W9NoiIlBBLYFZKqSERzVNfCMnFx9TXccGIUNIn2LBjnKYOXREJSYnMFuYHKSKo1KErBJ6WjoQs1lYvSQSFiCnVWgQLcJGo7U5IE4G5j706h1B4FLPNCGxYwiLllQKI6h+wenWX+yEc2BAheUQSwEUM/2D5AdFIHI4M7B++dmyjeEpiD+t5Uc/+RSC8wD4IuS2uDVJKfRH8bEvzQ8/+RSBn6M1eQDjphQbViMCM0Kt9kDwMvWOnaaQPR4aJ67AEwaSFo3uR7JhtnIalSoYhZmb/0iOil/a/FcXIYTYtfhgCGy6gFkswtBYdI5ytZRjamJsZEWbNfyuOs6ZJHIQRs27tQKMI0iMkm6uG3NKt1ORcC40i1OIXDOteD2csMTe0j0YRJOaP9jGyUhrVVX9vB0Pvy2voTX+L3VUYC5SW13bfMyLaGE7fLQFru7U4Z8NFhcOoaprv9Pb9ZwXU5IwNO6n1bRFW2W/puPjZVFGyFoGLkCqLtWukMYjYmDET0aRC31ALP9rqqmj7HwpXKR8qOxGRzU7uCHlu3/z9iXZWZpemswgQgp30zenFduZdAPjbVlqzqBDi2yliCmaG+toPF832prKJiGNaHsteiz9SXTywD3AtcP5wPYEbIqIxhidphWLSeEWZv5dP3YmOPgKJs2vh5SQ5WWEWPAkt7fcWwYCFlDE+Q3yOIaxdIOvMYfxLjOXhYBHawDyjj48Rqfi+sABe0cONY52n2sSSQoRDG64WEOMp1ZauKCJgaLrFy68xs+nKK8SImnHuLAKKrSZHlubgOcBtrHKhLo55iPR3jeN9LB4QFXUqlAgSAeN+LYVWqZm5pCb24V38hSq4XycB1nT+0hQvS8AQ9Cf0YgdOsEX4WoL4rUcFuQwtv3G2BEk74YXzyXdS52MJ1X/FZia892E7iYDiMImTMIlrHd6bHV0tIWjzXgYkWqf3vKlmEZ4rLVjbwVUEiQXDU4SDzwLupRO17dQxrKxwWZo1ePspVxGk7fA0VmDWwSU5aO+knpMIeGBJlXnb5ZqSrMFbhBonazvVbML2V5z7pi6cfQIWMiRUW+wULWOGKsFB/wzJHfkm8Epbw4KIGsNlfK/R7/y3tIb90iB5Ag/WULIQrHVyhlWuovcWuqYQUnfUx7wh93pCqxUYCloDD0PB393nPU+A2uMCYeGHVW2whty+YVasih1HXuXCOezrcIJiCG/FjyHIJMTS99u/cCJgasoLYMggRNBYq7WeJrwnOQIYPE+x9SF4JmzOSDsKAQwQIuZDd05FJOgc8lPn6H33kh4WQrieldxGfUdZcrze4cGjr5ahc4SeHjsN/VpQEcBp+5zYnfQEW8/7mZoDSlMTvTS+5eGHWAAfY9/C5dZmC14fyHmSCN8Lf7iHG+H5+jwRNfeTZzVRKfUPDTBl7K29W90AAAAASUVORK5CYII=" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/heidi-adams-1632a3207">
+                                <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 32.3 33.02">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <g>
+                                            <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                            <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53" rx="1.91"
+                                                ry="1.91" />
+                                            <path class="cls-1"
+                                                d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-details">
+                        <h4 class="name">HEIDI ADAMS - CHIEF EXECUTIVE OFFICER</h4>
+                        <div class="team-desription">
+                            <p>
+                                Heidi Adams brings 20 years of multidisciplinary design experience, spanning product
+                                design, film, urban infrastructure and interior design, showcasing her proficiency
+                                in user-centered design. Her ability to repeatedly deliver on projects globally
+                                stems from her expertise in building cohesive teams, creating a holistic vision, and
+                                empowering her team to maximize their strengths.
+                                <br><br>
+                                Heidi’s deep understanding of project execution, fabrication, and leadership is
+                                reflected in her successes, including being a finalist in the ‘LA Lights the Way’
+                                street lighting competition, which underscores her capacity to guide BASEstud.io
+                                toward innovative street lighting solutions that balance design, sustainability, and
+                                functionality.
+
+                            </p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="team-wrapper">
+
+                <!-- Team Member  -->
+                <div class="team-card">
+                    <div class="team-member-wrapper">
+                        <div class="team-avatar">
+                            <div class="team-avatar"><img src="assets/img/team/Patricia BW.png" alt=""></div>
+                        </div>
+                        <div class="team-details">
+                            <h4 class="name">PATRICIA BUSH-MCMANUS</h4>
+                            <h5 class="designation">Chief Operations Officer</h5>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/patriciabushmcmanus"><svg id="Layer_2"
+                                        data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.3 33.02">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <g>
+                                                <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                                <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53"
+                                                    rx="1.91" ry="1.91" />
+                                                <path class="cls-1"
+                                                    d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-desription">
+                        <p>
+                            Patricia Bush-McManus has generated $40M in revenue, $3.5M in grants, and grew a
+                            sales team from $10M to $25M in three years. She has 30 years of operational
+                            leadership experience in building high-performing teams and fostering strategic
+                            partnerships across government, industries and academic institutions.
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Member  -->
+                <div class="team-card">
+                    <div class="team-member-wrapper">
+                        <div class="team-avatar">
+                            <div class="team-avatar"><img src="assets/img/team/Brian Rounded Corners BW.png" alt="">
+                            </div>
+                        </div>
+                        <div class="team-details">
+                            <h4 class="name">BRIAN HACHTMANN</h4>
+                            <h5 class="designation">Lead Product Engineer</h5>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/brian-hachtmann-59b14b7"><svg id="Layer_2"
+                                        data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.3 33.02">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <g>
+                                                <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                                <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53"
+                                                    rx="1.91" ry="1.91" />
+                                                <path class="cls-1"
+                                                    d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-desription">
+                        <p>
+                            Brian is a mechanical engineer experienced in mechanical, electrical, optical and systems
+                            engineering. He was an original Tesla engineer, taking the company through its IPO. He has
+                            also worked for Northrop Grumman
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Member  -->
+                <div class="team-card">
+                    <div class="team-member-wrapper">
+                        <div class="team-avatar">
+                            <div class="team-avatar"><img src="assets/img/team/Kathy BW.png" alt=""></div>
+                        </div>
+                        <div class="team-details">
+                            <h4 class="name">KATHLEEN HARVATT</h4>
+                            <h5 class="designation">Chief Marketing Officer</h5>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/kathy-harvatt-b744766"><svg id="Layer_2"
+                                        data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.3 33.02">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <g>
+                                                <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                                <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53"
+                                                    rx="1.91" ry="1.91" />
+                                                <path class="cls-1"
+                                                    d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-desription">
+                        <p>
+                            40+ years in communications and marketing. Secured more than $40M in public/private funding.
+                            Consulted for the Mayor of Baltimore, MD and managed multimillion-dollar Department of
+                            Defense and Department of Energy contract proposals for hardware and software.
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Member  -->
+                <div class="team-card">
+                    <div class="team-member-wrapper">
+                        <div class="team-avatar">
+                            <div class="team-avatar"><img src="assets/img/team/Sarah Ten Eych BW.png" alt=""></div>
+                        </div>
+                        <div class="team-details">
+                            <h4 class="name">SARAH TEN EYCH</h4>
+                            <h5 class="designation">Materials Engineer</h5>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/sarah-ten-eyck-266023224"><svg id="Layer_2"
+                                        data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.3 33.02">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <g>
+                                                <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                                <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53"
+                                                    rx="1.91" ry="1.91" />
+                                                <path class="cls-1"
+                                                    d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-desription">
+                        <p>
+                            Mechanical engineer with a minor in material science and experience in product development.
+
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <h2 class="heading my-6">Our Advisors</h2>
+
+            <div class="team-wrapper">
+
+                <!-- Team Member  -->
+                <div class="team-card">
+                    <div class="team-member-wrapper">
+                        <div class="team-avatar">
+                            <div class="team-avatar"><img src="assets/img/team/Rani Rounded Corners BW.png" alt="">
+                            </div>
+                        </div>
+                        <div class="team-details">
+                            <h4 class="name">RANI NARULA-WOODS</h4>
+                            <h5 class="designation">Strategic Advisor</h5>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/raninarulawoods"><svg id="Layer_2"
+                                        data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.3 33.02">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <g>
+                                                <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                                <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53"
+                                                    rx="1.91" ry="1.91" />
+                                                <path class="cls-1"
+                                                    d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-desription">
+                        <p>
+                            LA Metro's first strategic initiatives superintendent .
+                            Deployed major initiatives, programming and services for Angelenos .
+                            CEO of Excellence in Innovation.
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Member  -->
+                <div class="team-card">
+                    <div class="team-member-wrapper">
+                        <div class="team-avatar">
+                            <div class="team-avatar"><img src="assets/img/team/jhon.png" alt=""></div>
+                        </div>
+                        <div class="team-details">
+                            <h4 class="name">JOHN BYRNE, PHD</h4>
+                            <h5 class="designation">Professor of Climate Policy</h5>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/johnbyrneceep"><svg id="Layer_2"
+                                        data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.3 33.02">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <g>
+                                                <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                                <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53"
+                                                    rx="1.91" ry="1.91" />
+                                                <path class="cls-1"
+                                                    d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-desription">
+                        <p>
+                            Distinguished professor of energy and climate policy.
+                            Contributor to the United Nations IPCC panel.
+                            Committee chairperson of World Council for Renewable Energy.
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer here  -->
+    <footer>
+        <div class="container">
+            <div class="footer-details" id="contact-us">
+                <h2 class="heading">CONTACT US</h2>
+
+                <br>
+                BASEstud.io Incorporated<br>
+                525 S Hewett St<br>
+                Los Angeles, CA 90013<br>
+                <br>
+                <a href="mailto:Info@BASEstud.io">Info@BASEstud.io</a>
+            </div>
+
+            <div class="footer-wrapper">
+                <div class="footer-navigation">
+                    <a href="index.html">Home</a>
+                </div>
+            </div>
+            <div class="copyrights">© BASEstud.io 2025</div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="assets/js/smoth-scroll.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fushiao</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="home-body">
+
+    <header class="d-md-none">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html" class="site-logo"><img src="assets/img/logo.png" alt=""></a>
+                <div class="action-wrapper">
+                    <div class="btn"><a href="about.html#contact-us">Contact Us</a></div>
+                    <div class="social-icon">
+                        <a href="https://bsky.app/profile/BASEstudio.bsky.social"> <svg id="Layer_2" data-name="Layer 2"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 37.31 32.69">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <image width="97" height="85" transform="scale(.38)"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABUCAYAAACSsVm9AAAACXBIWXMAABzCAAAcwgH6y7B5AAAFhElEQVR4nO2di3EaMRCGtTRgXIFJBSYVQAdJKrBdQdyBSQd2BXYqCK4gdgUxFQQ6gAqUWc8vIuAOSzo9VsA3w4ydeHSPX6tdrVZIMVrrodZ6qd140VpfqxPm3fW11hOt9dzj/fU33p7WeuAhgM38mMWwXn7Iu3vZbuwpoJGNBtmSir2NAmitbwNfvs3/DtyxIZv7HTM7vJc/QKeLwZvdcEzeDtUquOdG6P3b9E3jsVkemq+IMGS3Meb2ewnu+Uwp9chOK0HbWYHz5WHjKtF1k4lguOMelLD9pGBY5SjmMvW1UorAXDXGxcLJKYDKIAIz4geqRQhLgLNc18whgkKPEi9ECQFURhGUdCFKCaAyi6CkClFQgLkqIIKCEPcFrttISQsoKYJC1FQ8fIVFPhUSYE0pERSEKDahgwDZwtB9EE+nC9/DDRFltwpYYqqZsCvnRLSUIALzmYjeHP4uCpzxVUp9z3W9NoiIlBBLYFZKqSERzVNfCMnFx9TXccGIUNIn2LBjnKYOXREJSYnMFuYHKSKo1KErBJ6WjoQs1lYvSQSFiCnVWgQLcJGo7U5IE4G5j706h1B4FLPNCGxYwiLllQKI6h+wenWX+yEc2BAheUQSwEUM/2D5AdFIHI4M7B++dmyjeEpiD+t5Uc/+RSC8wD4IuS2uDVJKfRH8bEvzQ8/+RSBn6M1eQDjphQbViMCM0Kt9kDwMvWOnaaQPR4aJ67AEwaSFo3uR7JhtnIalSoYhZmb/0iOil/a/FcXIYTYtfhgCGy6gFkswtBYdI5ytZRjamJsZEWbNfyuOs6ZJHIQRs27tQKMI0iMkm6uG3NKt1ORcC40i1OIXDOteD2csMTe0j0YRJOaP9jGyUhrVVX9vB0Pvy2voTX+L3VUYC5SW13bfMyLaGE7fLQFru7U4Z8NFhcOoaprv9Pb9ZwXU5IwNO6n1bRFW2W/puPjZVFGyFoGLkCqLtWukMYjYmDET0aRC31ALP9rqqmj7HwpXKR8qOxGRzU7uCHlu3/z9iXZWZpemswgQgp30zenFduZdAPjbVlqzqBDi2yliCmaG+toPF832prKJiGNaHsteiz9SXTywD3AtcP5wPYEbIqIxhidphWLSeEWZv5dP3YmOPgKJs2vh5SQ5WWEWPAkt7fcWwYCFlDE+Q3yOIaxdIOvMYfxLjOXhYBHawDyjj48Rqfi+sABe0cONY52n2sSSQoRDG64WEOMp1ZauKCJgaLrFy68xs+nKK8SImnHuLAKKrSZHlubgOcBtrHKhLo55iPR3jeN9LB4QFXUqlAgSAeN+LYVWqZm5pCb24V38hSq4XycB1nT+0hQvS8AQ9Cf0YgdOsEX4WoL4rUcFuQwtv3G2BEk74YXzyXdS52MJ1X/FZia892E7iYDiMImTMIlrHd6bHV0tIWjzXgYkWqf3vKlmEZ4rLVjbwVUEiQXDU4SDzwLupRO17dQxrKxwWZo1ePspVxGk7fA0VmDWwSU5aO+knpMIeGBJlXnb5ZqSrMFbhBonazvVbML2V5z7pi6cfQIWMiRUW+wULWOGKsFB/wzJHfkm8Epbw4KIGsNlfK/R7/y3tIb90iB5Ag/WULIQrHVyhlWuovcWuqYQUnfUx7wh93pCqxUYCloDD0PB393nPU+A2uMCYeGHVW2whty+YVasih1HXuXCOezrcIJiCG/FjyHIJMTS99u/cCJgasoLYMggRNBYq7WeJrwnOQIYPE+x9SF4JmzOSDsKAQwQIuZDd05FJOgc8lPn6H33kh4WQrieldxGfUdZcrze4cGjr5ahc4SeHjsN/VpQEcBp+5zYnfQEW8/7mZoDSlMTvTS+5eGHWAAfY9/C5dZmC14fyHmSCN8Lf7iHG+H5+jwRNfeTZzVRKfUPDTBl7K29W90AAAAASUVORK5CYII=" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/base-stud-io"><svg id="Layer_2" data-name="Layer 2"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.3 33.02">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <g>
+                                        <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                        <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53" rx="1.91"
+                                            ry="1.91" />
+                                        <path class="cls-1"
+                                            d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/basestud.io"> <svg id="Layer_2" data-name="Layer 2"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.08 35.08">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <g>
+                                        <path class="cls-1"
+                                            d="m26.61,0H8.47C3.79,0,0,3.79,0,8.47v18.14c0,4.68,3.79,8.47,8.47,8.47h18.14c4.68,0,8.47-3.79,8.47-8.47V8.47c0-4.68-3.79-8.47-8.47-8.47Zm5.44,26.01c0,3.34-2.71,6.05-6.05,6.05H9.07c-3.34,0-6.05-2.71-6.05-6.05V9.07c0-3.34,2.71-6.05,6.05-6.05h16.93c3.34,0,6.05,2.71,6.05,6.05v16.93Z" />
+                                        <path class="cls-1"
+                                            d="m17.56,8.47c-5.01,0-9.07,4.06-9.07,9.07s4.06,9.07,9.07,9.07,9.07-4.06,9.07-9.07-4.06-9.07-9.07-9.07Zm0,15.12c-3.33,0-6.05-2.72-6.05-6.05s2.72-6.05,6.05-6.05,6.05,2.72,6.05,6.05-2.72,6.05-6.05,6.05Z" />
+                                        <circle class="cls-1" cx="27.23" cy="7.86" r="1.81" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Layout for mobile version  -->
+
+    <!-- Mobiel Header  -->
+    <div class="mobile-header d-md-block ">
+        <div class="container">
+            <div class="mobile-header-wrapper">
+                <div class="mobile-logo"><img src="/assets/img/logo.png" alt=""></div>
+                <div class="menu-toggle" id="openOffcanvas" aria-controls="offcanvas" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Off Canvas  -->
+    <div class="off-canvas" id="offcanvas" aria-hidden="true" role="dialog">
+        <div id="closeOffcanvas" class="close-btn" aria-label="Close">✕</div>
+        <div class="off-canvas-menu">
+            <a href="/">Home</a>
+            <a href="about.html">About</a>
+            <a href="about.html#team"">Our Team</a>
+        </div>
+        <div class=" off-canvas-social">
+                <div class="social-icon">
+                    <a href="https://bsky.app/profile/BASEstudio.bsky.social"> <svg id="Layer_2" data-name="Layer 2"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 37.31 32.69">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <image width="97" height="85" transform="scale(.38)"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABUCAYAAACSsVm9AAAACXBIWXMAABzCAAAcwgH6y7B5AAAFhElEQVR4nO2di3EaMRCGtTRgXIFJBSYVQAdJKrBdQdyBSQd2BXYqCK4gdgUxFQQ6gAqUWc8vIuAOSzo9VsA3w4ydeHSPX6tdrVZIMVrrodZ6qd140VpfqxPm3fW11hOt9dzj/fU33p7WeuAhgM38mMWwXn7Iu3vZbuwpoJGNBtmSir2NAmitbwNfvs3/DtyxIZv7HTM7vJc/QKeLwZvdcEzeDtUquOdG6P3b9E3jsVkemq+IMGS3Meb2ewnu+Uwp9chOK0HbWYHz5WHjKtF1k4lguOMelLD9pGBY5SjmMvW1UorAXDXGxcLJKYDKIAIz4geqRQhLgLNc18whgkKPEi9ECQFURhGUdCFKCaAyi6CkClFQgLkqIIKCEPcFrttISQsoKYJC1FQ8fIVFPhUSYE0pERSEKDahgwDZwtB9EE+nC9/DDRFltwpYYqqZsCvnRLSUIALzmYjeHP4uCpzxVUp9z3W9NoiIlBBLYFZKqSERzVNfCMnFx9TXccGIUNIn2LBjnKYOXREJSYnMFuYHKSKo1KErBJ6WjoQs1lYvSQSFiCnVWgQLcJGo7U5IE4G5j706h1B4FLPNCGxYwiLllQKI6h+wenWX+yEc2BAheUQSwEUM/2D5AdFIHI4M7B++dmyjeEpiD+t5Uc/+RSC8wD4IuS2uDVJKfRH8bEvzQ8/+RSBn6M1eQDjphQbViMCM0Kt9kDwMvWOnaaQPR4aJ67AEwaSFo3uR7JhtnIalSoYhZmb/0iOil/a/FcXIYTYtfhgCGy6gFkswtBYdI5ytZRjamJsZEWbNfyuOs6ZJHIQRs27tQKMI0iMkm6uG3NKt1ORcC40i1OIXDOteD2csMTe0j0YRJOaP9jGyUhrVVX9vB0Pvy2voTX+L3VUYC5SW13bfMyLaGE7fLQFru7U4Z8NFhcOoaprv9Pb9ZwXU5IwNO6n1bRFW2W/puPjZVFGyFoGLkCqLtWukMYjYmDET0aRC31ALP9rqqmj7HwpXKR8qOxGRzU7uCHlu3/z9iXZWZpemswgQgp30zenFduZdAPjbVlqzqBDi2yliCmaG+toPF832prKJiGNaHsteiz9SXTywD3AtcP5wPYEbIqIxhidphWLSeEWZv5dP3YmOPgKJs2vh5SQ5WWEWPAkt7fcWwYCFlDE+Q3yOIaxdIOvMYfxLjOXhYBHawDyjj48Rqfi+sABe0cONY52n2sSSQoRDG64WEOMp1ZauKCJgaLrFy68xs+nKK8SImnHuLAKKrSZHlubgOcBtrHKhLo55iPR3jeN9LB4QFXUqlAgSAeN+LYVWqZm5pCb24V38hSq4XycB1nT+0hQvS8AQ9Cf0YgdOsEX4WoL4rUcFuQwtv3G2BEk74YXzyXdS52MJ1X/FZia892E7iYDiMImTMIlrHd6bHV0tIWjzXgYkWqf3vKlmEZ4rLVjbwVUEiQXDU4SDzwLupRO17dQxrKxwWZo1ePspVxGk7fA0VmDWwSU5aO+knpMIeGBJlXnb5ZqSrMFbhBonazvVbML2V5z7pi6cfQIWMiRUW+wULWOGKsFB/wzJHfkm8Epbw4KIGsNlfK/R7/y3tIb90iB5Ag/WULIQrHVyhlWuovcWuqYQUnfUx7wh93pCqxUYCloDD0PB393nPU+A2uMCYeGHVW2whty+YVasih1HXuXCOezrcIJiCG/FjyHIJMTS99u/cCJgasoLYMggRNBYq7WeJrwnOQIYPE+x9SF4JmzOSDsKAQwQIuZDd05FJOgc8lPn6H33kh4WQrieldxGfUdZcrze4cGjr5ahc4SeHjsN/VpQEcBp+5zYnfQEW8/7mZoDSlMTvTS+5eGHWAAfY9/C5dZmC14fyHmSCN8Lf7iHG+H5+jwRNfeTZzVRKfUPDTBl7K29W90AAAAASUVORK5CYII=" />
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/base-stud-io"><svg id="Layer_2" data-name="Layer 2"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.3 33.02">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g>
+                                    <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                    <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53" rx="1.91"
+                                        ry="1.91" />
+                                    <path class="cls-1"
+                                        d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/basestud.io"> <svg id="Layer_2" data-name="Layer 2"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.08 35.08">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g>
+                                    <path class="cls-1"
+                                        d="m26.61,0H8.47C3.79,0,0,3.79,0,8.47v18.14c0,4.68,3.79,8.47,8.47,8.47h18.14c4.68,0,8.47-3.79,8.47-8.47V8.47c0-4.68-3.79-8.47-8.47-8.47Zm5.44,26.01c0,3.34-2.71,6.05-6.05,6.05H9.07c-3.34,0-6.05-2.71-6.05-6.05V9.07c0-3.34,2.71-6.05,6.05-6.05h16.93c3.34,0,6.05,2.71,6.05,6.05v16.93Z" />
+                                    <path class="cls-1"
+                                        d="m17.56,8.47c-5.01,0-9.07,4.06-9.07,9.07s4.06,9.07,9.07,9.07,9.07-4.06,9.07-9.07-4.06-9.07-9.07-9.07Zm0,15.12c-3.33,0-6.05-2.72-6.05-6.05s2.72-6.05,6.05-6.05,6.05,2.72,6.05,6.05-2.72,6.05-6.05,6.05Z" />
+                                    <circle class="cls-1" cx="27.23" cy="7.86" r="1.81" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+        </div>
+    </div>
+
+    <section class="mobile-text py-5 d-md-block ">
+        <div class="container">
+            <div class="mobile-wrapper">
+                <div class="text-info">
+                    <h5>
+                        REDEFINING<br>
+                        CRITICAL INFRASTRUCTURE<br>
+                        FOR A CLIMATE CHANGING WORLD
+                    </h5>
+                </div>
+                <div class="mobile-text-box">
+                    <h3>Next-Gen Streetlight</h3>
+                    <h6>Resilience + Revenue + Connectivity</h6>
+                </div>
+
+                <div class="mobile-btn"><a href="about.html#contact-us">Contact Us</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile-card-wrapper py-5 d-md-block ">
+        <div class=" container">
+            <div class="mobile-card">
+                <h2>A NEW STANDARD FOR
+                    RESILIENT INFRASTRUCTURE</h2>
+                <p>AOur poles offer Level 2 curbside EV charging—bringing convenient,
+                    revenue-generating infrastructure to neighborhoods, campuses, and commercial districts.
+                    It’s a scalable way to accelerate EV adoption where people actually park.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile-icon-list py-5 d-md-block ">
+        <div class="container">
+            <div class="mobile-icon-wrapper">
+                <div class="icon-box">
+                    <div class="mobile-icon">
+                        <img src="assets/img/Wifi.png">
+                    </div>
+                    <h6>WIFI HOTSPOTS</h6>
+                </div>
+                <div class="icon-box">
+                    <div class="mobile-icon">
+                        <img src="assets/img/Composit.png">
+                    </div>
+                    <h6>ADVANCED COMPOSITE</h6>
+                </div>
+                <div class="icon-box">
+                    <div class="mobile-icon">
+                        <img src="assets/img/Solar.png">
+                    </div>
+                    <h6>SOLAR + BATTERIES</h6>
+                </div>
+                <div class="icon-box">
+                    <div class="mobile-icon">
+                        <img src="assets/img/Impact.png">
+                    </div>
+                    <h6>IMPACT</h6>
+                </div>
+                <div class="icon-box">
+                    <div class="mobile-icon">
+                        <img src="assets/img/EV.png">
+                    </div>
+                    <h6>EV CHARGING</h6>
+                </div>
+            </div>
+            <div class="mobile-btn"><a href="about.html#contact-us">Contact Us</a></div>
+        </div>
+    </section>
+    <!-- Layout for mobile version end -->
+     
+
+    <section class="d-md-none">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="left-content">
+                    <h4>
+                        REDEFINING<br>
+                        CRITICAL INFRASTRUCTURE<br>
+                        FOR A CLIMATE CHANGING WORLD
+                    </h4>
+                </div>
+                <div class="right-content">
+                    <h1>Next-Gen Streetlights</h1>
+                    <h6>Resilience + Revenue + Connectivity</h6>
+                    <div class="partners">
+                        <h6>Our Partners</h6><img src="assets/img/Partners.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-effect-wrapper d-md-none">
+        <div class="container">
+            <div class="d-flex space-between mt-5">
+
+                <!-- Icon Wrapper  -->
+                <div class="icon-wrapper">
+                    <div class="icon active">
+                        <img class="default-icon" src="assets/img/Composit.png">
+                        <img class="active-icon" src="assets/img/Composit Glow.png">
+                    </div>
+                    <div class="icon">
+                        <img class="default-icon" src="assets/img/Solar.png">
+                        <img class="active-icon" src="assets/img/Solar Glow.png">
+                    </div>
+                    <div class="icon">
+                        <img class="default-icon" src="assets/img/Wifi.png">
+                        <img class="active-icon" src="assets/img/Wifi Glow.png">
+                    </div>
+                    <div class="icon">
+                        <img class="default-icon" src="assets/img/EV.png">
+                        <img class="active-icon" src="assets/img/EV Glow.png">
+                    </div>
+                    <div class="icon">
+                        <img class="default-icon" src="assets/img/purpose.png">
+                        <img class="active-icon" src="assets/img/purpose-glow.png">
+                    </div>
+
+                </div>
+
+                <!-- Information Card Wrapper  -->
+                <div class="info-card-wrapper sticky-parent">
+                    <div class="sticky-column">
+                        <div class="info-card">
+                            <h2 class="card-heading">Advanced Composites</h2>
+                            <p class="card-text">Stronger than steel and built to withstand fires, floods, and storms,
+                                our advanced composite poles set a new standard in infrastructure. With minimal
+                                maintenance and longer lifespans, they cut lifecycle costs and boost long-term ROI.</p>
+                        </div>
+                        <div class="info-card ">
+                            <h2 class="card-heading">Solar Power + Battery Backup</h2>
+                            <p class="card-text">Each pole generates solar energy and stores it in onboard
+                                batteries—keeping lights on during blackouts and emergencies. This local energy support
+                                helps keep power flowing to homes during power failures and high-demand events.</p>
+                        </div>
+                        <div class="info-card ">
+                            <h2 class="card-heading">WiFi Hotspots</h2>
+                            <p class="card-text">Each pole doubles as a WiFi hotspot, creating a reliable network that
+                                stays online even during outages. It keeps people connected—whether for everyday use or
+                                emergency response.</p>
+                        </div>
+                        <div class="info-card">
+                            <h2 class="card-heading">Curbside EV Charging</h2>
+                            <p class="card-text">Our poles offer Level 2 curbside EV charging—bringing convenient,
+                                revenue-generating infrastructure to neighborhoods, campuses, and commercial districts.
+                                It’s a scalable way to accelerate EV adoption where people actually park.</p>
+                        </div>
+                        <div class="info-card ">
+                            <h2 class="card-heading">Purpose-Built</h2>
+                            <p class="card-text">We offer a set of standardized configurations optimized for different
+                                environments — residential streets, commercial zones, campuses, and transit corridors.
+                                This approach ensures local fit while keeping manufacturing and deployment scalable.</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer here  -->
+    <footer class="d-md-none" style="margin-top: 600px;">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-navigation">
+                    <a href="about.html">About Us</a>
+                    <a href="about.html#team">Team</a>
+                </div>
+                <div class="action-wrapper">
+                    <div class="btn"><a href="#">Contact Us</a></div>
+                    <div class="social-icon">
+                        <a href="#"> <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 37.31 32.69">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <image width="97" height="85" transform="scale(.38)"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGEAAABUCAYAAACSsVm9AAAACXBIWXMAABzCAAAcwgH6y7B5AAAFhElEQVR4nO2di3EaMRCGtTRgXIFJBSYVQAdJKrBdQdyBSQd2BXYqCK4gdgUxFQQ6gAqUWc8vIuAOSzo9VsA3w4ydeHSPX6tdrVZIMVrrodZ6qd140VpfqxPm3fW11hOt9dzj/fU33p7WeuAhgM38mMWwXn7Iu3vZbuwpoJGNBtmSir2NAmitbwNfvs3/DtyxIZv7HTM7vJc/QKeLwZvdcEzeDtUquOdG6P3b9E3jsVkemq+IMGS3Meb2ewnu+Uwp9chOK0HbWYHz5WHjKtF1k4lguOMelLD9pGBY5SjmMvW1UorAXDXGxcLJKYDKIAIz4geqRQhLgLNc18whgkKPEi9ECQFURhGUdCFKCaAyi6CkClFQgLkqIIKCEPcFrttISQsoKYJC1FQ8fIVFPhUSYE0pERSEKDahgwDZwtB9EE+nC9/DDRFltwpYYqqZsCvnRLSUIALzmYjeHP4uCpzxVUp9z3W9NoiIlBBLYFZKqSERzVNfCMnFx9TXccGIUNIn2LBjnKYOXREJSYnMFuYHKSKo1KErBJ6WjoQs1lYvSQSFiCnVWgQLcJGo7U5IE4G5j706h1B4FLPNCGxYwiLllQKI6h+wenWX+yEc2BAheUQSwEUM/2D5AdFIHI4M7B++dmyjeEpiD+t5Uc/+RSC8wD4IuS2uDVJKfRH8bEvzQ8/+RSBn6M1eQDjphQbViMCM0Kt9kDwMvWOnaaQPR4aJ67AEwaSFo3uR7JhtnIalSoYhZmb/0iOil/a/FcXIYTYtfhgCGy6gFkswtBYdI5ytZRjamJsZEWbNfyuOs6ZJHIQRs27tQKMI0iMkm6uG3NKt1ORcC40i1OIXDOteD2csMTe0j0YRJOaP9jGyUhrVVX9vB0Pvy2voTX+L3VUYC5SW13bfMyLaGE7fLQFru7U4Z8NFhcOoaprv9Pb9ZwXU5IwNO6n1bRFW2W/puPjZVFGyFoGLkCqLtWukMYjYmDET0aRC31ALP9rqqmj7HwpXKR8qOxGRzU7uCHlu3/z9iXZWZpemswgQgp30zenFduZdAPjbVlqzqBDi2yliCmaG+toPF832prKJiGNaHsteiz9SXTywD3AtcP5wPYEbIqIxhidphWLSeEWZv5dP3YmOPgKJs2vh5SQ5WWEWPAkt7fcWwYCFlDE+Q3yOIaxdIOvMYfxLjOXhYBHawDyjj48Rqfi+sABe0cONY52n2sSSQoRDG64WEOMp1ZauKCJgaLrFy68xs+nKK8SImnHuLAKKrSZHlubgOcBtrHKhLo55iPR3jeN9LB4QFXUqlAgSAeN+LYVWqZm5pCb24V38hSq4XycB1nT+0hQvS8AQ9Cf0YgdOsEX4WoL4rUcFuQwtv3G2BEk74YXzyXdS52MJ1X/FZia892E7iYDiMImTMIlrHd6bHV0tIWjzXgYkWqf3vKlmEZ4rLVjbwVUEiQXDU4SDzwLupRO17dQxrKxwWZo1ePspVxGk7fA0VmDWwSU5aO+knpMIeGBJlXnb5ZqSrMFbhBonazvVbML2V5z7pi6cfQIWMiRUW+wULWOGKsFB/wzJHfkm8Epbw4KIGsNlfK/R7/y3tIb90iB5Ag/WULIQrHVyhlWuovcWuqYQUnfUx7wh93pCqxUYCloDD0PB393nPU+A2uMCYeGHVW2whty+YVasih1HXuXCOezrcIJiCG/FjyHIJMTS99u/cCJgasoLYMggRNBYq7WeJrwnOQIYPE+x9SF4JmzOSDsKAQwQIuZDd05FJOgc8lPn6H33kh4WQrieldxGfUdZcrze4cGjr5ahc4SeHjsN/VpQEcBp+5zYnfQEW8/7mZoDSlMTvTS+5eGHWAAfY9/C5dZmC14fyHmSCN8Lf7iHG+H5+jwRNfeTZzVRKfUPDTBl7K29W90AAAAASUVORK5CYII=" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#"><svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 32.3 33.02">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <g>
+                                        <circle class="cls-1" cx="4.31" cy="4.31" r="4.31" />
+                                        <rect class="cls-1" x=".72" y="11.48" width="7.18" height="21.53" rx="1.91"
+                                            ry="1.91" />
+                                        <path class="cls-1"
+                                            d="m32.3,19.38v12.2c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44v-10.05c0-1.98-1.61-3.59-3.59-3.59s-3.59,1.61-3.59,3.59v10.05c0,.79-.65,1.44-1.44,1.44h-4.31c-.79,0-1.44-.65-1.44-1.44V12.92c0-.79.65-1.44,1.44-1.44h4.31c.79,0,1.44.65,1.44,1.44v.92c1.44-1.86,3.81-3.07,6.46-3.07,3.96,0,7.9,2.87,7.9,8.61Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#"> <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 35.08 35.08">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #fff;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <g>
+                                        <path class="cls-1"
+                                            d="m26.61,0H8.47C3.79,0,0,3.79,0,8.47v18.14c0,4.68,3.79,8.47,8.47,8.47h18.14c4.68,0,8.47-3.79,8.47-8.47V8.47c0-4.68-3.79-8.47-8.47-8.47Zm5.44,26.01c0,3.34-2.71,6.05-6.05,6.05H9.07c-3.34,0-6.05-2.71-6.05-6.05V9.07c0-3.34,2.71-6.05,6.05-6.05h16.93c3.34,0,6.05,2.71,6.05,6.05v16.93Z" />
+                                        <path class="cls-1"
+                                            d="m17.56,8.47c-5.01,0-9.07,4.06-9.07,9.07s4.06,9.07,9.07,9.07,9.07-4.06,9.07-9.07-4.06-9.07-9.07-9.07Zm0,15.12c-3.33,0-6.05-2.72-6.05-6.05s2.72-6.05,6.05-6.05,6.05,2.72,6.05,6.05-2.72,6.05-6.05,6.05Z" />
+                                        <circle class="cls-1" cx="27.23" cy="7.86" r="1.81" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights">© BASEstud.io 2025</div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="assets/js/smoth-scroll.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
