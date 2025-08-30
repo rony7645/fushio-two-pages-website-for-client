@@ -528,6 +528,11 @@ h2.heading {
 .footer-navigation a:hover {
   color: #cecece;
 }
+@media (max-width:996px) {
+  .footer-navigation {
+  display: none;
+}
+}
 .copyrights {
   color: #fff;
   padding: 20px 0;
